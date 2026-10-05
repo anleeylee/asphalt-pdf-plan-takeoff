@@ -1,0 +1,32 @@
+{
+  "asphaltcosts": {
+    "base_url": "https://asphaltcosts.com/",
+    "api_endpoint": null,
+    "api_key_env": "ASPHALTCOSTS_API_KEY",
+    "timeout_seconds": 20,
+    "fallback_to_mirror": true,
+    "max_requests_per_minute": 60
+  },
+  "ai": {
+    "provider": "heuristic",
+    "base_url": null,
+    "model": null,
+    "api_key_env": "ADI_AI_API_KEY",
+    "vision_enabled": false
+  },
+  "weather": {
+    "source": "manual",
+    "open_meteo_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "review": {
+    "confidence_threshold": 0.9
+  },
+  "validation": {
+    "area_tolerance_percent": 0.5,
+    "ticket_gross_tare_tolerance_tons": 0.5,
+    "duplicate_distance": 0.001
+  },
+  "retention": {
+    "temp_extract_days": 7
+  }
+}

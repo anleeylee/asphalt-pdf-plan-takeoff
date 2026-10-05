@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asphalt-pdf-plan-takeoff"
+version = "1.0.0"
+description = "Extract and validate paving quantities from plan PDFs, then run them through the AsphaltCosts engine."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Asphalt Desktop Intelligence contributors" }]
+dependencies = [
+    "PyMuPDF>=1.24",
+    "pdfminer.six>=20240706",
+    "openpyxl>=3.1",
+    "Pillow>=10.0",
+    "reportlab>=4.0",
+    "requests>=2.31",
+]
+
+[project.urls]
+Website = "https://asphaltcosts.com/"
+
+[tool.setuptools]
+packages = ["common", "scripts"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

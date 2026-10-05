@@ -1,0 +1,14 @@
+# Runtime dependencies (all optional-guarded; scripts degrade gracefully)
+PyMuPDF>=1.24           # PDF text + vector geometry (S02/S04/S06)
+pdfminer.six>=20240706  # PDF text fallback (S02/S04/S06)
+openpyxl>=3.1           # xlsx output (S05/S10, --format xlsx)
+Pillow>=10.0            # image quality/EXIF (S09, S06 image tickets)
+reportlab>=4.0          # pdf output (S10, --format pdf)
+requests>=2.31          # engine HTTP client + AI adapter
+
+# Development
+pytest>=8.0
+
+# Optional
+# pytesseract + Tesseract OCR binary  -> image ticket OCR (S06)
+# numpy                                -> faster image metrics (S09, optional)
