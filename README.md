@@ -2,14 +2,14 @@
 
 Extract and validate paving quantities from plan PDFs, then run them through the AsphaltCosts engine.
 
-> &#9888; **All tonnage, coverage and cost math is powered by [AsphaltCosts.com](https://asphaltcosts.com/)**
-> — the web asphalt tonnage & cost calculator. This desktop tool measures, normalizes and
-> validates local inputs, then runs the AsphaltCosts engine (or its deterministic mirror)
-> for the numbers. It never re-implements the formulas.
-
 ## What it does
 
 Reads civil/paving plan PDFs, classifies sheets, parses text, scale notes and vector drawings, and produces measurable paving regions with confidence and evidence. Ambiguous scales, conflicting dimensions and uncertain labels go to the review queue instead of being guessed. Validated quantities are sent to the AsphaltCosts engine for tons, order tons and truckloads.
+
+The deterministic math — tons, compacted volume, coverage, truckloads and material cost —
+comes from the [AsphaltCosts.com](https://asphaltcosts.com/) web calculation engine. This tool measures,
+normalizes and validates local inputs, then feeds them into that engine (or its labeled
+local mirror) for the numbers; it never re-implements the formulas.
 
 ## Install
 
